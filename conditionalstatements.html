@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- if-else statement -->
+    <h1>If and else condition</h1>
+    <p id="condition"></p>
+    <script>
+        let year=2012;
+        if(year%4==0){
+            output="Then it is a leap year";
+        }
+        else{
+            output="Not a leap year";
+        }
+        document.getElementById("condition").innerHTML=output;
+    </script>
+    <!-- Creating else-if statements -->
+    <h2>If their are more than one condition then it is necessity to use else-if </h2>
+    <p id="con2"></p>
+    <script>
+        let marks=95;
+        if((marks>=91)&&(marks<=100)){
+            output="Outstanding";
+        }
+        else if((marks>=81)&&(marks<=90)){
+            output="Very Good";
+        }
+        else if((marks>=71)&&(marks<=80)){
+            output="Good";
+        }
+        else{
+            output="need to improve"
+        }
+        document.getElementById("con2").innerHTML=output;
+    </script>
+    <!-- Switches -->
+    <p id="switches"></p>
+    <script>
+        // let holidays;
+        var festivals;
+        switch(ganesh){
+           case holi:
+                festivals="holi";
+             break;
+            case dussera:
+                festivals="dussera";
+             break;
+            case ganesh:
+                festivals="ganesh";
+            break;
+            case pongal:
+                festivals="pongal";
+            break;
+            default:
+                festivals="ugadi";
+            break;
+        }
+        document.getElementById("switches").innerHTML=festivals;
+
+         </script>
+         <!-- for loop -->
+         <p id="loop"></p>
+         <script>
+            for(i=0;i<=10;i++){
+            }
+            document.getElementById("loop").innerHTML=x;
+         </script>
+
+    
+</body>
+</html>

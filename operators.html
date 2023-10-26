@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Comparison</h2>
+    <p id="comparison"></p>
+    <p id="comp1"></p>
+    <p id="comp2"></p>
+    <p id="comp3"></p>
+    <p id="comp4"></p>
+    <p id="comp5"></p>
+    <p id="comp6"></p>
+<!-- Creating Comparison Operator -->
+    <script>
+        var num1=50;
+        document.getElementById("comparison").innerHTML=(num1 == 2);
+        document.getElementById("comp1").innerHTML=(num1 === 2);
+        document.getElementById("comp2").innerHTML=(num1 != 2);
+        document.getElementById("comp3").innerHTML=(num1> 2);
+        document.getElementById("comp4").innerHTML=(num1 < 2);
+        document.getElementById("comp5").innerHTML=(num1 >= 2);
+        document.getElementById("comp6").innerHTML=(num1 <= 2);
+    </script>
+<!-- Creating logical operators -->
+   <h2>Logical Operator</h2>
+   <p id="logicaland"></p>
+   <p id="logicalor"></p>
+   <p id="logicalnot"></p>
+    <script>
+        let m=10;
+        var n=20;
+        document.getElementById("logicaland").innerHTML=(m>15&&n<2);
+        document.getElementById("logicalor").innerHTML=(m>15||n<30);
+        document.getElementById("logicalnot").innerHTML=!(m==n);
+    </script>
+<!-- Creating ternary operator -->
+    <h3>Ternary operator 0r conditional operator</h3>
+    <p id="ternary"> </p>
+        <script>
+            let min=20;
+            var condition=(min>35)? "pass": "fail";
+            document.getElementById("ternary").innerHTML=condition;
+        </script>
+<!-- Javascript comparsion -->
+    <p id="com1"></p>
+    <script>
+         document.getElementById("com1").innerHTML=3>"bhavani";
+    </script>
+</body>
+</html>

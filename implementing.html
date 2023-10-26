@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="function" style="padding:40; font-size: larger; background-color: aquamarine"></p>
+    <p id="object" style="padding:40; font-size: larger; background-color:burlywood"></p>
+    <p id="arrays" style="padding:40; font-size: larger; background-color:darkcyan"></p>
+    <p id="strings" style="padding:40; font-size: larger; background-color:cornflowerblue"></p>
+    <p id="string1" style="padding:40; font-size: larger; background-color:darksalmon"></p>
+    <p id="escape" style="padding:20; font-size:smaller; background-color: mediumpurple"></p>
+    <p id="str"></p> 
+    <script>
+    // creating functions
+        function function1(a,b){
+                 return a*b;
+        }
+        const result=function1(10,20);
+        document.getElementById("function").innerHTML= "The answer is "+result;
+    // creating objects
+        const person={firstname:"Bunny",lastname:"Reddy",bloodgroup:"O+"}
+        document.getElementById("object").innerHTML="The person firstname is "+person.firstname+" and second name is "+person.lastname+" then blood group is "+person.bloodgroup;
+    // creating arrays
+        const company=["Infinite","Cognizant","Infosys","Goggle","JMan"];
+        document.getElementById("arrays").innerHTML="The array item is "+company[3];
+    </script>
+    <script>
+    // Creating Strings
+        let string1="Javascript";
+        document.getElementById("strings").innerHTML="Currently the training is on "+string1;
+    // Creating Stringlength
+        let $stringlength="Welcome to Javascript Programming Language";
+        document.getElementById("string1").innerHTML="The length of the string is "+$stringlength.length;
+    // Creating Escapes sequences in strings
+       let r="Training is on \"Javascript\" Properties";
+       document.getElementById("escape").innerHTML=r;
+    // Creating substrings in strings
+       let str = "Pineapple, Mango, Guava";
+       document.getElementById("str").innerHTML = str.substring(10,16);
+    </script>
+    <!-- creating operators -->
+    <!-- creating arithmetic operators   -->
+    <h1>Arithematic operation</h1>
+    <p id="arithematic"></p>
+    <script>
+    var z=200;
+    var x=548;
+    let m=z+x;
+    let n=z-x;
+    let o=z*x;
+    let d=z/x;
+    let e=z%x;
+    let f=z**x;
+        document.getElementById("arithematic").innerHTML="add="+m+" <br> sub="+n+" <br> mul="+o+" <br> div="+d+" <br> mod="+e+" <br> expo="+f;
+    </script>
+    <!-- Assignment Operator -->
+    <h2>Using Assignment Operator</h2>
+    <p id="assignment"></p>
+    <script>
+        let h=9;
+        var q=15;
+        h+=8;
+        q-=2; 
+        document.getElementById("assignment").innerHTML="The value of h is"+h+" <br> and the value of  q is "+q;     
+    </script>
+    <!-- Creating events:It happen when the user want to do something. -->
+    <div id="demo">
+    <button onclick="document.getElementById('demo').innerHTML=Date();">click to view</button></div>
+</body>
+</html>

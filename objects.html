@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Creating object for storing the data of the employee -->
+    <script>
+        const person =
+        {
+            details:["Bhavani","reddy"],
+            employeeid:1033311,
+            designation:"AssociateSoftwareEngineer",
+            // creating functions
+            info:function(){
+                console.log(`Hey ,This is ${this.details[0]}.${this.details[1]}`);
+            },
+            companyinfo:function(){
+                console.log(`the role is ${this.employeeid} and the EmployeeID is ${this.designation}`);
+            },
+    };
+    // To display directly we use logproperty\
+    
+     function logProperty(propertyName){
+        console.log(person[propertyName]);
+    } 
+    logProperty("details.first");
+    logProperty("details.last");
+    logProperty("employeeid");
+    logProperty("designation");
+    // Creating Constructors
+    // function person(details,city)
+    // {
+    //     this.details=details;
+    //     this.designation=city;
+    //     this.companyinfo=function(){
+    //         console.log(`Hello I'm ${this.details} and living in ${this.city}`);
+
+    //     };
+    // }
+    // const bhavani=new Person("Bhavani","hyderabad");
+    // bhavani.details;
+    // bhavani.companyinfo();
+
+    // const abhinaya=new Person("Abhinaya");
+    // abhinaya.details;
+    // abhinaya.companyinfo();
+     
+    // const romika=new Person("Romika");
+    // romika.details;
+    // romika.companyinfo();
+// objects using constructors
+    function Profile(name, age, city)
+    {
+        this.name=name;
+        this.age=age;
+        this.city=city;
+        // creating function
+        this.emprofile = function()
+        {
+            console.log(`${name} and ${age} and ${city}`);
+        };
+    }
+    // creating object
+    const person1 = new Profile("Bhavani",21,"Hyd");
+    person1.name;
+    person1.age;
+    person1.city;
+    person1.emprofile();
+        </script>
+</body>
+</html>
